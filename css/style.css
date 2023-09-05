@@ -1,0 +1,191 @@
+/*=========================Same for all pages===========================START=*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1, h2, h3, a{
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#contactDataBanner{
+    background-color: #F0BB62;
+    width: 100%;
+}
+
+#contactDataBanner .contactData{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+#contactDataBanner .contactData div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contactDataBanner .contactData div p{
+    font-weight: 900;
+}
+
+#content-container{
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+main{
+    margin: 0 auto;
+    width: 100%;
+    -webkit-box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.5); 
+    box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.5);
+}
+
+/*---------------Header-----------------*/
+header{background-color: white;}
+
+/*---------------Navbar-----------------*/
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#navbar ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+}
+
+#navbar ul a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul .navlink:hover{
+    border-bottom: 2px black solid;
+}
+
+#navbar ul .activeNavLink{
+    border-bottom: 2px black solid;
+}
+
+#navbar ul .contanctBtn{
+    padding: 0.5rem;
+    border: 2px black solid;
+    border-radius: 8px;
+}
+
+#navbar ul .contanctBtn:hover{
+    background-color: black;
+    color: white;
+}
+/*=========================Same for all pages===========================END=*/
+/*---------------Hero Slider-----------------*/
+.hero-slider{
+    position: relative;
+}
+
+.graycover{
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.graycover img, .graycover h1, .graycover p{
+    color: white;
+}
+
+.graycover img{
+    width: 300px;
+}
+
+.graycover h1{
+    font-size: 8rem;
+}
+
+.graycover p{
+    font-size: 3rem;
+}
+
+/*---------------Flexslider-----------------*/
+
+.flexslider{
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.flexslider img{
+    width: 100%;
+}
+
+.flex-control-nav{
+    display: none;
+}
+
+/*---------------Call to Action-----------------*/
+.cta-container{
+    background-color: #F0BB62;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3rem 3rem;
+}
+
+.cta-container .contanctBtn{
+    padding: 0.5rem;
+    border: 2px black solid;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+    color: black;
+}
+
+.cta-container .contanctBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.cta-container h2{
+    font-size: 3rem;
+}
+
+.cta-container p{
+    font-size: 1.5rem;
+}
+
+/*---------------Services Startseite-----------------*/
+.service-container{
+    display: flex;
+}
+
+.service-container div{
+    height: 25rem;
+    width: 20rem;
+}
