@@ -11,7 +11,8 @@ h1, h2, h3, a{
 }
 
 body{
-    background-color: aliceblue;
+    background-color: #f0f8ff;
+    background-image: url("../assets/bodyBackgroundImage.png");
 }
 
 #contactDataBanner{
@@ -52,7 +53,11 @@ main{
 }
 
 /*---------------Header-----------------*/
-header{background-color: white;}
+header{
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.5); 
+    box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.5);
+}
 
 /*---------------Navbar-----------------*/
 #navbar{
@@ -94,6 +99,130 @@ header{background-color: white;}
     background-color: black;
     color: white;
 }
+
+
+/*---------------Footer-----------------*/
+footer{
+    width: 100%;
+    background-color: #F0BB62;
+}
+
+.footer-section{
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    background-color: #F0BB62;
+}
+
+.footerNav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 3rem;
+}
+
+.footerNav > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNav > div h2{
+    font-size: 2rem;
+}
+
+.footerNav > div .divider{
+    height: 2px;
+    width: 5rem;
+    background-color: black;
+    margin: 1rem 0;
+}
+
+.footerNav > div a{
+    color: black;
+    font-size: 1.25rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    line-height: 2rem;
+    text-decoration: none;
+}
+
+.footerNav > div a:hover{
+    color: white;
+}
+
+.footerNav > div p{
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+.footerNav > div ul{
+    list-style-position: inside;
+}
+
+.footerNav .kontakt div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerNav .kontakt div img{
+    height: 24px;
+    width: 24px;
+}
+
+.copyright-section > .divider{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 1rem 0;
+}
+
+.copyright{
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.copyright div a{
+    color: black;
+    font-size: 1.25rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    line-height: 2rem;
+    text-decoration: none;
+}
+
+.copyright div a:hover{
+    color: white;
+}
+
+.copyright div p{
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+.copyright > p{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 900;
+    line-height: 2rem;
+}
+
+
+
 /*=========================Same for all pages===========================END=*/
 /*---------------Hero Slider-----------------*/
 .hero-slider{
@@ -180,12 +309,264 @@ header{background-color: white;}
     font-size: 1.5rem;
 }
 
-/*---------------Services Startseite-----------------*/
-.service-container{
-    display: flex;
+.second-cta .cta-container{
+    background-color: white;
 }
 
-.service-container div{
-    height: 25rem;
-    width: 20rem;
+/*---------------Services Startseite-----------------*/
+.service-section{
+    background-color: white;
 }
+.service-titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 0;
+    flex-direction: column;
+}
+
+.service-titel h1{
+    font-size: 5rem;
+}
+
+.service-titel .divider{
+    width: 10%;
+    height: 2px;
+    background-color: #333;
+}
+
+.service-container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3.5rem;
+}
+
+.service-container > div{
+    height: 26rem;
+    width: 20rem;
+    text-align: center;
+    padding-top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.service-container > div div{
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+
+.service-container img{
+    width: 150px;
+}
+
+.service-container h3{
+    font-size: 2rem;
+}
+
+.service-container p{
+    padding: .5rem 0;
+}
+
+.service-container a{
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    color: black;
+}
+
+.service-container a:hover{
+    color: #952323;
+}
+
+
+/*---------------Galerie-----------------*/
+.galerie-section{
+    background-color: #952323;
+    padding-bottom: 6rem;
+}
+
+.galerie-titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 0;
+    flex-direction: column;
+}
+
+.galerie-titel h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.galerie-titel .divider{
+    width: 10%;
+    height: 2px;
+    background-color: white;
+}
+
+.galerie-container{
+    display: grid;
+    grid-template-columns: 12% 12% 12% 12% 12% 12%;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 2rem;
+
+    justify-content: center;
+}
+
+.galerie-container div{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.galerie-container img{
+    width: 100%;
+}
+
+.galerie-container .image3 img, 
+.galerie-container .image4 img,
+.galerie-container .image5 img{
+    width: auto;
+    height: 100%;
+}
+
+.galerie-container .image1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.galerie-container .image2{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.galerie-container .image3{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.galerie-container .image4{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 100%;
+}
+.galerie-container .image5{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.galerie-container .image6{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.galerie-container .image7{
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.galerie-container div div{
+    display: none;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    height: 100%;
+}
+
+.galerie-container div div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.galerie-container div div h3{
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.galerie-container div div a{
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: #F0BB62;
+}
+
+.galerie-container div div a:hover{
+    transform: scale(110%);
+}
+
+/*---------------Testimonials-----------------*/
+.testimonial-section{
+    margin-bottom: 3rem;
+}
+
+.testimonial-titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem 0;
+    flex-direction: column;
+}
+
+.testimonial-titel h1{
+    font-size: 5rem;
+}
+
+.testimonial-titel .divider{
+    width: 10%;
+    height: 2px;
+    background-color: #333;
+}
+
+.testimonial-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial-container .testimonial-textbox{
+    position: relative;
+    width: 400px;
+    padding: 1rem 1.5rem;
+}
+
+.testimonial-container img{
+    position: absolute;
+    width: 50px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.testimonial-container p{
+    font-size: 1.5rem;
+    z-index: 1;
+    padding-bottom: 2rem;
+}
+
+.testimonial-container h3{
+    font-size: 1.5rem;
+}
+
