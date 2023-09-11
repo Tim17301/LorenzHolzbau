@@ -50,7 +50,26 @@
     });
   }
 
+//Hamburger Menu
+let fixed = false;
 
+    $("#hamburger").on("click", function(){
+        $("#hamburger").toggleClass("is-active");
+        $(".openMobileNav").toggleClass("closedMobileNav");
+        $(".greyBoxOpen").toggleClass("greyBoxClosed");
+        
+
+        // Um den Body zu fixen, wenn mann das Menu geöffnet hat.
+        /*
+        if (fixed==false){
+            fixed = true;
+            $("body").css("position", "fixed");
+        } else if (fixed==true){
+            fixed = false;
+            $("body").css("position", "");
+        }
+        */
+    });
 
 
 
