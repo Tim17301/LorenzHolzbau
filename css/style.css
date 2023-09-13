@@ -932,3 +932,224 @@ footer{
     }
 }
 
+
+/*---------------Service Anker Bar-----------------*/
+.ankerBar-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #952323;
+    padding: 2rem 0;
+}
+
+.ankerBar-container img{
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.ankerBar-container > a{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 0px 15px 2px rgba(0,0,0,0.5); 
+    box-shadow: 1px 0px 15px 2px rgba(0,0,0,0.5);
+
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.ankerBar-container a div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .ankerBar-container{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 200px 200px;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .ankerBar-container > a{
+        width: 150px;
+        height: 150px;
+
+        font-size: 1rem;
+    }
+
+    .ankerBar-container{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 150px 150px;
+        gap: 50px;
+    }
+
+    .ankerBar-container img{
+        width: 60px;
+        margin-bottom: .5rem;
+    }
+}
+
+@media (max-width: 390px){
+    .ankerBar-container > a{
+        width: 110px;
+        height: 110px;
+
+        font-size: .75rem;
+    }
+
+    .ankerBar-container{
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 100px 100px;
+        gap: 30px;
+    }
+
+    .ankerBar-container img{
+        width: 50px;
+        margin-bottom: .3rem;
+    }
+}
+
+
+/*---------------Die einzelnen Services im Detail-----------------*/
+.detailed-services-container{
+    background-color: white;
+}
+
+.detailed-services-content{
+    padding: 1rem;
+}
+
+.service-abschnitte{
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.detailed-services-content > h1{
+    font-size: 5rem;
+}
+
+.überschrift{
+    font-size: 2rem;
+}
+
+.detailed-services-textbox p{
+    padding-bottom: 1rem;
+}
+
+.detailed-services-textbox ul{
+   list-style-position: inside; 
+}
+
+.detailed-services-textbox ul li{
+    line-height: 2rem;
+}
+
+@media (max-width: 800px){
+    .detailed-services-content > h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1100px) {
+   .service-abschnitte{
+        flex-direction: column;
+   }
+
+   .detailed-services-abschnitt2 .service-img-container{
+        display: none;
+    }
+
+   .service-img-container{
+        width: 50%;
+   }
+
+   .service-img-container img{
+        width: 100%;
+   }
+}
+
+@media (max-width: 800px){
+    .service-img-container{
+        width: 95%;
+    }
+}
+
+
+
+/*---------------Firmen Geschichte-----------------*/
+.firmenGeschichte-section{
+    background-color: white;
+    padding: 3rem;
+}
+
+.firmenGeschichte-container{
+    display: flex;
+    gap: 3rem;
+}
+
+@media (max-width: 1000px) {
+    .firmenGeschichte-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 660px) {
+    .firmenGeschichte-img{
+        width: 100%;
+    }
+
+    .firmenGeschichte-img img{
+        width: 100%;
+    }
+}
+
+
+/*---------------Triff unser Team-----------------*/
+.meetTheTeam-section{
+    background-color: white;
+    padding: 3rem;
+}
+
+.meetTheTeam-container{
+    display: flex;
+    gap: 3rem;
+}
+
+.meetTheTeam-teammitglieder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.meetTheTeam-teammitglieder > div{
+    background-color: gray;
+    height: 300px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teammitglieder-imgs{
+    background-color: white;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
